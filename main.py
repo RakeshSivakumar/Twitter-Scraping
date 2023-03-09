@@ -7,8 +7,9 @@ import pandas as pd
 import pymongo
 import base64
 import streamlit as st
-st.header("Twitter Scraping")
 
+
+st.header("Twitter Scraping")
 Name=st.text_input("Enter your hashtag:")
 Date=st.date_input("Start Date:")
 Date2=st.date_input("End Date:")
@@ -43,7 +44,7 @@ def scrape_twitter_data(Name,Date,Date2,Count):
 
 def Send_Data_to_MDB(df):
     Data=df.to_dict('records')
-    connection=pymongo.MongoClient('mongodb+srv://rakesh625464:guvi2022@rakesh-cloud.7avh6y8.mongodb.net/?retryWrites=true&w=majority')
+    connection=pymongo.MongoClient('mongodb+srv://rakesh625464:*****@rakesh-cloud.7avh6y8.mongodb.net/?retryWrites=true&w=majority')
     TwitterDB=connection['Twitter']
     collection=TwitterDB[f'{Name}_Data']
     collection.insert_many(Data)
