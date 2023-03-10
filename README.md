@@ -18,8 +18,8 @@ Approach:
 
 Packages used:
 
-snscrape
-pandas
-pymongo
-base64
+snscrape,
+pandas,
+pymongo,
+base64,
 streamlit
