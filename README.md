@@ -28,3 +28,4 @@ pandas
 pymongo
 
 streamlit
+
