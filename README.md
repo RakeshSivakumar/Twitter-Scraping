@@ -27,6 +27,4 @@ pandas
 
 pymongo
 
-base64
-
 streamlit
