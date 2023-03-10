@@ -5,7 +5,6 @@
 import snscrape.modules.twitter as sntwitter
 import pandas as pd
 import pymongo
-import base64
 import streamlit as st
 
 
